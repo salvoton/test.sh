@@ -8,8 +8,8 @@ url="https://github.com/salvoton/test.sh"
 license=("GPL")
 depends=("bash" "skim" "paru")
 source=("$pkgname-$pkgver.tar.gz::$url/archive/refs/tags/$pkgver.tar.gz")
-sha256sums=("SKIP")
+sha256sums=("ce1f341f59a8881f897088a22daf67932174f946b2c274fb842693e62e301994")
 
 package() {
-	install -Dm775 "$srcdir/$pkgname-$pkgver/parus" "$pkgdir/usr/bin/parus"
+	install -Dm775 "$srcdir/$pkgname-$pkgver/test.sh" "$pkgdir/usr/bin/test.sh"
 }
